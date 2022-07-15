@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Baloo+Bhaina+2:wght@500&family=Montserrat:ital,wght@0,400;0,600;0,700;0,900;1,600;1,800&family=Oleo+Script&display=swap');
+body{
+    
+    background-color: #ebece6;
+}
+.upperpart{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h2{
+
+    color: black;
+    font-family: 'Montserrat', sans-serif;;
+}
+a{
+    color: black;
+    display: flex;
+    transition: 2s;
+}
+a:hover{
+    color: blue;
+}
+.bottom-part{
+    justify-content: baseline;
+    display: flex;
+    width: 100%;
+}
+img{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+@media screen and (max-width: 600px) {
+    img{
+        height:150px ;
+        width: 150px;
+        margin-top: 300px;
+        margin-left: 1px;
+    }
+}
+
