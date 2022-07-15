@@ -10,8 +10,7 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: center;
-
-
+  align-items: center;
 }
 
 .container {
@@ -19,16 +18,20 @@ body {
   background-color: #fff;
   display: flex;
   justify-content: center;
-  /* border:1px solid black; */
+  align-items: center;
+  flex-direction: column;
 }
 
 .head-intro {
-  /* border:1px solid black; */
   display: flex;
   flex-direction: column;
   margin: 100px 20px 10px 20px;
   padding: 10px 20px 10px 20px;
   font-size: 420%;
+}
+
+.animate__animated .animate__bounceInDown {
+  --animate-duration: 10s;
 }
 
 .head-texts {
@@ -42,8 +45,60 @@ body {
   cursor: grab;
 }
 
+.main-info {
+  max-width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.display-picture {
+
+  display: flex;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.general-info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px auto;
+}
+
+.display-picture {
+  display: flex;
+
+}
+
+img {
+
+  border-radius: 5px;
+  box-shadow: 15px 15px 15px grey;
+}
+
+.name {
+  margin-left: 7px;
+  font-size: 350%;
+}
+
+.QnA {
+  font-size: 150%;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.answer {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+}
+
 @media screen and (max-width:768px) {
-  .head-intro {
-    font-size: 220%;
+  .main-info {
+    flex-wrap: wrap;
   }
 }
